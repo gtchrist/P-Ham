@@ -1,0 +1,38 @@
+// A stupidly simple (and probably stupidly inaccurate) PID output simulation for use with 
+// the PID class.  Compile / run with the command
+// g++ test.cxx PID.cpp ; ./a.out
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+
+#include "PID.h"
+
+#define CHANGE_RATE 0.01
+
+using namespace digitalcave;
+
+int main(){
+	PID pid(1, 1, 0.01, DIRECTION_NORMAL, 0);
+	pid.setOutputLimits(0, 1);
+	
+	float output;
+
+	uint32_t time = 0;
+
+	float setPoint = 1.05;
+	float measured = 0.98;
+	
+	uint8_t stableLoops = 0;
+
+	while (((setPoint - measured) >= 0.1 || (setPoint - measured) <= -0.1) || stableLoops <= 100){
+		
+		if ((setPoint - measured) < 0.1 && (setPoint - measured) > -0.1) stableLoops++;
+		else stableLoops = 0;
+		
+		output = pid.compute(setPoint, measured, time);
+		measured += (output - measured) * CHANGE_RATE;
+		time += 100;
+		printf("Time: %d\tOutput: %f\tMeasured: %f\n", time, output, measured);
+	}
+}
