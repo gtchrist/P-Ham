@@ -1,0 +1,231 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 3PDT
+D 3PDT Switch
+K 3PDT Switch
+$ENDCMP
+#
+$CMP 74HC4067
+D 16 Channel Analog Multiplexer / Demultiplexer
+K multiplexer, demultiplexer, analog
+$ENDCMP
+#
+$CMP 74HC4852
+D 2x4 Channel Analog Multiplexer / Demultiplexer
+K multiplexer, demultiplexer
+$ENDCMP
+#
+$CMP BRIGE_RECTIFIER
+D Bridge Rectifier
+$ENDCMP
+#
+$CMP CP1SMALL
+D RSMALL
+K R DEV
+$ENDCMP
+#
+$CMP CRYSTAL_RESONATOR
+D Either a Crystal with external caps, or a resonator with built in caps
+K CRYSTAL RESONATOR
+$ENDCMP
+#
+$CMP DPDT
+D DPDT Switch (e.g. GW22LCP)
+K GW22LCP, DPDT
+$ENDCMP
+#
+$CMP DSCHSMALL
+D RSMALL
+K R DEV
+$ENDCMP
+#
+$CMP DSMALL
+D RSMALL
+K R DEV
+$ENDCMP
+#
+$CMP DZSMALL
+D RSMALL
+K R DEV
+$ENDCMP
+#
+$CMP IS31FL3236
+D 36 Channel LED Driver
+$ENDCMP
+#
+$CMP ISP
+D ISP Header
+K ISP HEADER
+$ENDCMP
+#
+$CMP JACK_TRS
+D Jack TRS
+K TRS Jack Stereo
+$ENDCMP
+#
+$CMP JACK_TS
+D Jack TS
+K TRS Jack Mono
+$ENDCMP
+#
+$CMP L293D
+D L293D Quad Half Bridge
+K MOTOR DRIVER HALF BRIDGE
+$ENDCMP
+#
+$CMP LE-MM103
+D 8x8 LED Matrix Bi-Color Red Green
+$ENDCMP
+#
+$CMP LEDSMALL
+D RSMALL
+K R DEV
+$ENDCMP
+#
+$CMP LSMALL
+D Inductor
+K inductor
+$ENDCMP
+#
+$CMP MC34063A
+D Peak Boost Buck Inverting Switching Regulator
+K Buck, Power
+$ENDCMP
+#
+$CMP MCP4451
+D Digital Potentiometer
+K potentiometer
+$ENDCMP
+#
+$CMP MCP4728
+D Quad I2C DAC (http://ww1.microchip.com/downloads/en/DeviceDoc/22187a.pdf)
+K DAC
+$ENDCMP
+#
+$CMP MOSFET-SOT-23-3
+D N-Channel MOSFET, SOT-23
+K N-Channel MOSFET Logic Level
+$ENDCMP
+#
+$CMP NCP1400A
+D NCP1400A_Boost_Regulator
+$ENDCMP
+#
+$CMP OPA548
+D High Current / High Voltage Op Amp OPA548 / OPA547
+K OPAMP, OPA547, OPA548
+$ENDCMP
+#
+$CMP OPA549
+D High Current / High Voltage Op Amp OPA548 / OPA547
+K OPAMP, OPA547, OPA548
+$ENDCMP
+#
+$CMP OPAMP-2
+D Generic OP-AMP
+K opamp, amp, operational, amplifier
+$ENDCMP
+#
+$CMP OPAMP-4
+D Generic OP-AMP
+K opamp, amp, operational, amplifier
+$ENDCMP
+#
+$CMP OPAMP-4-SPLIT
+D Quad Op amp.
+$ENDCMP
+#
+$CMP PDI
+D PDI Header
+K PDI HEADER
+$ENDCMP
+#
+$CMP POTENTIOMETER
+D Potentiometer
+K R DEV
+$ENDCMP
+#
+$CMP RELAY_DPDT
+D RELAY_DPST
+K Relay, DPST
+$ENDCMP
+#
+$CMP RELAY_OMRON_G5LE-1
+D RELAY_OMRON_G5LE-1
+K Relay, SPDT
+$ENDCMP
+#
+$CMP RELAY_OMRON_G5V-1
+D RELAY_OMRON_G5V-1
+K Relay, SPDT
+$ENDCMP
+#
+$CMP RELAY_SPDT
+D RELAY_SPST
+K Relay, SPST
+$ENDCMP
+#
+$CMP RESISTOR
+D Resistance
+K R DEV
+$ENDCMP
+#
+$CMP RESONATOR
+D Either a Crystal with external caps, or a resonator with built in caps
+K CRYSTAL RESONATOR
+$ENDCMP
+#
+$CMP RGB_LED_COMMON_ANODE
+D RGB LED (Common Anode)
+K RGB_LED_COMMON_ANODE
+$ENDCMP
+#
+$CMP RGB_LED_COMMON_ANODE_ALT1
+D RGB LED (Common Anode)
+K RGB_LED_COMMON_ANODE
+$ENDCMP
+#
+$CMP RGB_LED_COMMON_CATHODE
+D RGB LED (Common Cathode)
+K RGB_LED_COMMON_CATHODE
+$ENDCMP
+#
+$CMP RSMALL
+D RSMALL
+K R DEV
+$ENDCMP
+#
+$CMP R_PACK5
+D 5 resistors Pack
+K R DEV
+$ENDCMP
+#
+$CMP S25FL512S
+D Spansion S25FL512S 64MB SPI Flash Module
+$ENDCMP
+#
+$CMP SPDT
+D SPDT Switch
+K SPDT
+$ENDCMP
+#
+$CMP STPIC6D595
+D Shift Register / Open Drain
+K shift
+$ENDCMP
+#
+$CMP TB6552FNG
+D Motor Controller, Full H-Bridge x2
+K Motor, Bridge, H-Bridge
+$ENDCMP
+#
+$CMP XC9140
+D XC9140_Boost_Regulator
+$ENDCMP
+#
+$CMP XTALSMALL
+D RSMALL
+K R DEV
+$ENDCMP
+#
+#End Doc Library
