@@ -111,6 +111,14 @@ ifeq 'avrispmkII' '$(PROGRAMMER)'
 	AVRDUDE_ARGS += -P usb
 endif
 
+ifeq 'dfu' '$(PROGRAMMER)'
+	ifeq 'Linux' '$(OS)'
+		DFU_ERASE_ARGS=
+	else
+		DFU_ERASE_ARGS=--force
+	endif
+endif
+
 #If an EFUSE variable has been set, we program the extended fuses too
 ifeq '' '$(EFUSE)'
 	EXTENDED_FUSE_WRITE=
@@ -140,7 +148,7 @@ hex: $(PROJECT).hex
 
 flash: all
 ifeq 'dfu' '$(PROGRAMMER)'
-	$(DFU) $(MMCU) erase --force
+	$(DFU) $(MMCU) erase $(DFU_ERASE_ARGS)
 	$(DFU) $(MMCU) flash $(PROJECT).hex
 else
 	$(AVRDUDE_PREP_COMMANDS)

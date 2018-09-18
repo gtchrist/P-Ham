@@ -60,6 +60,6 @@ int main(){
 
 		//Flash a heartbeat every 200ms
 		PORTB ^= _BV(4);
-		_delay_ms(200);
+		_delay_ms(20);
 	}
 }
