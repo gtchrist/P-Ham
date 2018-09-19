@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name powerhammer_main-rescue)(type Legacy)(uri ${KIPRJMOD}/powerhammer_main-rescue.lib)(options "")(descr ""))
+  (lib (name custom)(type Legacy)(uri /Users/wyatt/Documents/Electronics/P-Ham/kicad/lib/kicad/library/custom.lib)(options "")(descr ""))
+)
