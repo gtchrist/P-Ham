@@ -927,10 +927,6 @@ Wire Wire Line
 Wire Wire Line
 	8500 6450 7900 6450
 Wire Wire Line
-	7900 6450 7900 5550
-Wire Wire Line
-	7900 5550 3000 5550
-Wire Wire Line
 	6950 2650 6950 3950
 Wire Wire Line
 	3000 4150 7550 4150
@@ -1170,4 +1166,50 @@ Wire Wire Line
 Connection ~ 3400 5050
 Wire Wire Line
 	3400 5050 3500 5050
+$Comp
+L custom:RSMALL R?
+U 1 1 5BB6F1B4
+P 7900 5900
+F 0 "R?" H 7949 5939 40  0000 L CNN
+F 1 "1k" H 7949 5862 40  0000 L CNN
+F 2 "MF_Passives:MF_Passives-R0603" V 7830 5900 30  0001 C CNN
+F 3 "" H 7900 5950 30  0000 C CNN
+	1    7900 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7900 5550 7700 5550
+Wire Wire Line
+	7900 5800 7900 5550
+Wire Wire Line
+	7900 6000 7900 6450
+$Comp
+L custom:RSMALL R?
+U 1 1 5BB8922A
+P 7700 5900
+F 0 "R?" H 7749 5939 40  0000 L CNN
+F 1 "1k" H 7749 5862 40  0000 L CNN
+F 2 "MF_Passives:MF_Passives-R0603" V 7630 5900 30  0001 C CNN
+F 3 "" H 7700 5950 30  0000 C CNN
+	1    7700 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 5800 7700 5550
+$Comp
+L power:GND #PWR?
+U 1 1 5BB9AEEA
+P 7700 6150
+F 0 "#PWR?" H 7700 5900 50  0001 C CNN
+F 1 "GND" H 7700 6000 50  0000 C CNN
+F 2 "" H 7700 6150 50  0000 C CNN
+F 3 "" H 7700 6150 50  0000 C CNN
+	1    7700 6150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 6000 7700 6150
+Connection ~ 7700 5550
+Wire Wire Line
+	7700 5550 3000 5550
 $EndSCHEMATC
