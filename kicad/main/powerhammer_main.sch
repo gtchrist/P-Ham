@@ -1045,7 +1045,7 @@ Connection ~ 9400 6100
 Wire Wire Line
 	3750 5850 8700 5850
 Wire Wire Line
-	9400 5400 9400 5600
+	9400 5400 9400 5500
 $Comp
 L power:+24V #PWR?
 U 1 1 5BCF7B07
@@ -1093,16 +1093,10 @@ $EndComp
 Wire Wire Line
 	8000 4950 8150 4950
 Wire Wire Line
-	8850 4950 8850 5300
-Wire Wire Line
-	8850 5300 9500 5300
-Wire Wire Line
 	8150 5250 8150 5350
 Wire Wire Line
 	8150 5050 8150 4950
 Connection ~ 8150 4950
-Wire Wire Line
-	8150 4950 8850 4950
 $Comp
 L power:GND #PWR?
 U 1 1 5BD353BE
@@ -1216,4 +1210,35 @@ Text Label 3850 3250 0    50   ~ 0
 CYL_ENCODER_A
 Text Label 3850 3350 0    50   ~ 0
 CYL_ENCODER_B
+$Comp
+L MF_Discrete_Semiconductor:DIODES_SOD-123 D?
+U 1 1 5BB9DB13
+P 9100 5350
+F 0 "D?" V 9142 5262 45  0000 R CNN
+F 1 "DIODES_SOD-123" V 9058 5262 45  0000 R CNN
+F 2 "MF_Discrete_Semiconductor_SOD-123" H 9288 5429 20  0001 C CNN
+F 3 "" H 9100 5350 60  0001 C CNN
+	1    9100 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9100 4950 9100 5200
+Wire Wire Line
+	9100 5200 9400 5200
+Wire Wire Line
+	9400 5200 9400 5300
+Wire Wire Line
+	9400 5300 9500 5300
+Wire Wire Line
+	8150 4950 9100 4950
+Wire Wire Line
+	9100 5500 9400 5500
+Connection ~ 9400 5500
+Wire Wire Line
+	9400 5500 9400 5600
+Wire Wire Line
+	9100 5500 9100 5450
+Wire Wire Line
+	9100 5250 9100 5200
+Connection ~ 9100 5200
 $EndSCHEMATC
