@@ -36,7 +36,7 @@ int main(){
 		int16_t encoder_cyl = encoders.get_encoder_cyl_movement();
 
 		if (serialUSB.isConnected()){
-			char temp[32];
+			char temp[64];
 			snprintf(temp, sizeof(temp), "Encoder offsets: UI: %d, Cylynder: %d\n", encoder_ui, encoder_cyl);
 			serialUSB.write(temp);
 		}

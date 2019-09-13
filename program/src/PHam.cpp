@@ -38,9 +38,9 @@ int main(){
 	pwm_init(ports, pins, 1, 10000);
 
 	//Flash a blue light for one second at startup - this shows us clearly if there has been a reset due to WDT or something.
-	PORTB &= ~_BV(5);
+	PORTB &= ~_BV(5); // turns off bit 5
 	_delay_ms(1000);
-	PORTB |= _BV(5);
+	PORTB |= _BV(5); // turns on bit 5 (light is inverse of expected)
 
 	//Enable watchdog timer
 	wdt_enable(WDTO_500MS);

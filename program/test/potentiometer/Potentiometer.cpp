@@ -35,7 +35,7 @@ int main(){
 	PORTB |= _BV(5);
 
 	while(1){
-		uint16_t value = analog_read_p(0)  & 0X3FC;
+		uint16_t value = analog_read_p(0)  & 0X3FF;
 		if (serialUSB.isConnected()){
 			char temp[32];
 			snprintf(temp, sizeof(temp), "ADC: %d\n", value);
